@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+
+# Virtual environments
+.venv
+
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.idea/
+.vscode/
+
+# Downloaded model weights
+models/
+
+# Audio: never commit source material or separated output
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.m4a
+*_stems/

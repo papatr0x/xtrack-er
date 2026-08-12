@@ -1,0 +1,32 @@
+[project]
+name = "xtrack-er"
+version = "0.1.0"
+description = "xtrack-er — vocal removal and stem separation, CLI application"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "demucs",
+    "torch",
+    "torchaudio",
+    "soundfile",
+    "sounddevice>=0.5.0",
+    "rich",
+    "questionary>=2.0",
+]
+
+[tool.uv]
+override-dependencies = [
+    "numba>=0.57",
+    "llvmlite>=0.42",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
